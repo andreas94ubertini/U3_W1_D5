@@ -18,10 +18,17 @@
 
         .tile {
             border: 1px solid white;
+            background-color: rgba(77, 77, 77, 0.54);
+        }
+        .tile:hover{
+            cursor: pointer;
+        }
+        #actions>p:hover{
+            cursor: pointer;
         }
     </style>
 </head>
-<body>
+<body class="text-center">
 <div class="marvel-device iphone-x bg-danger">
     <div class="notch">
         <div class="camera"></div>
@@ -39,14 +46,14 @@
         <div class="shadow shadow--bl"></div>
     </div>
     <div class="inner-shadow"></div>
-    <div class="screen container d-flex flex-column">
+    <div class="screen container d-flex flex-column gap-3">
         <!-- Content goes here -->
         <div id="row-clock" class="row">
             <div class="col-12 text-center mt-5">
                 <h1 id="clock"></h1>
             </div>
         </div>
-        <div id="row-screen" class="row shadow-lg">
+        <div id="row-screen" class="row shadow-lg gap-3 px-5">
 
         </div>
         <div id="row-actions" class="row mt-5">
@@ -61,7 +68,7 @@
         </div>
 
         <div class="row flex-grow-1 flex-column ">
-            <div class="col d-flex align-items-end justify-content-evenly">
+            <div id="actions" class="col d-flex align-items-end justify-content-evenly">
                 <p class="d-none action" id="call">Chiama</p>
                 <p id="home">HOME</p>
                 <p class="d-none action" id="charge">Ricarica</p>
